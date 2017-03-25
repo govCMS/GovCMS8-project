@@ -8,12 +8,38 @@
     "conflict": {
         "drupal/core": "7.*"
     },
-    "repositories": {
-        "drupal": {
+    "config": {
+        "secure-http": false
+    },
+    "suggest": {
+        "hirak/prestissimo": "^0.3"
+    },
+    "repositories": [
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "harvesthq/chosen",
+                "version": "1.7.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/harvesthq/chosen/archive/v1.7.0.zip",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "https://github.com/harvesthq/chosen.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                },
+                "require": {
+                    "composer/installers": "^1.2.0"
+                }
+            }
         }
-    },
+    ],
     "require": {
         "acquia/blt": "^8.6.15",
         "govcms/govcms": "8.3.x-dev"
