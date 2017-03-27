@@ -19,20 +19,27 @@
         "composer/installers": "^1.2.0",
         "cweagans/composer-patches": "^1.6.0",
         "wikimedia/composer-merge-plugin": "^1.4.0",
+        "acquia/blt": "^8.7.0-beta1",
         "govcms/config": "8.3.x-dev",
-        "acquia/blt": "^8.7.0-beta1"
+        "govcms/govcms": "8.3.x-dev"
     },
     "extra": {
+        "blt": {
+            "update": true
+        },
         "branch-alias": {
             "dev-master": "8.3.x-dev"
         },
         "composer-exit-on-patch-failure": true,
         "merge-plugin": {
             "require": [
+                "vendor/acquia/blt/composer.required.json",
                 "vendor/govcms/config/composer.required.json",
                 "vendor/govcms/config/composer.suggested.json"
             ],
             "include": [],
+            "recurse": true,
+            "merge-dev": true,
             "merge-extra": true,
             "merge-extra-deep": true,
             "merge-scripts": true,

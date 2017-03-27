@@ -20,6 +20,12 @@
 
 govCMS Drupal 8 utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using govCMS, make sure you have Composer installed on your machine.
 
+For a better performance, we recommend 
+
+```
+composer global require "hirak/prestissimo:^0.3"
+```
+
 #### Via Composer Create-Project
 
 ```
