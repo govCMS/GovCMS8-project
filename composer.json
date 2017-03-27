@@ -1,6 +1,7 @@
 {
     "name": "govcms/govcms-project",
     "description": "Built for the new digital government",
+    "keywords": ["govCMS"],
     "type": "project",
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
@@ -14,42 +15,28 @@
     "suggest": {
         "hirak/prestissimo": "^0.3"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "harvesthq/chosen",
-                "version": "1.7.0",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/harvesthq/chosen/archive/v1.7.0.zip",
-                    "type": "zip"
-                },
-                "source": {
-                    "url": "https://github.com/harvesthq/chosen.git",
-                    "type": "git",
-                    "reference": "origin/master"
-                },
-                "require": {
-                    "composer/installers": "^1.2.0"
-                }
-            }
-        }
-    ],
     "require": {
-        "wikimedia/composer-merge-plugin": "^1.3",
-        "cweagans/composer-patches": "^1.5.0",
         "composer/installers": "^1.2.0",
-        "acquia/blt": "^8.6.15",
-        "govcms/govcms": "8.3.x-dev"
+        "cweagans/composer-patches": "^1.6.0",
+        "wikimedia/composer-merge-plugin": "^1.4.0",
+        "govcms/config": "8.3.x-dev",
+        "acquia/blt": "^8.7.0-beta1"
     },
     "extra": {
         "branch-alias": {
             "dev-master": "8.3.x-dev"
+        },
+        "composer-exit-on-patch-failure": true,
+        "merge-plugin": {
+            "require": [
+                "vendor/govcms/config/composer.required.json",
+                "vendor/govcms/config/composer.suggested.json"
+            ],
+            "include": [],
+            "merge-extra": true,
+            "merge-extra-deep": true,
+            "merge-scripts": true,
+            "replace": true
         },
         "enable-patching": true,
         "installer-paths": {
