@@ -4,25 +4,14 @@
     "keywords": ["govCMS"],
     "type": "project",
     "license": "GPL-2.0+",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "conflict": {
-        "drupal/core": "7.*"
-    },
-    "config": {
-        "secure-http": false
-    },
-    "suggest": {
-        "hirak/prestissimo": "^0.3"
-    },
     "require": {
         "composer/installers": "^1.2.0",
         "cweagans/composer-patches": "^1.6.0",
         "wikimedia/composer-merge-plugin": "^1.4.0",
         "acquia/blt": "^8.7.0-beta1",
-        "govcms/config": "8.3.x-dev",
         "govcms/govcms": "8.3.x-dev"
     },
+    "require-dev": {},
     "extra": {
         "blt": {
             "update": true
@@ -47,33 +36,26 @@
         },
         "enable-patching": true,
         "installer-paths": {
-            "docroot/core": [
-                "type:drupal-core"
-            ],
-            "docroot/modules/contrib/{$name}": [
-                "type:drupal-module"
-            ],
-            "docroot/modules/custom/{$name}": [
-                "type:drupal-custom-module"
-            ],
-            "docroot/profiles/contrib/{$name}": [
-                "type:drupal-profile"
-            ],
-            "docroot/profiles/custom/{$name}": [
-                "type:drupal-custom-profile"
-            ],
-            "docroot/themes/contrib/{$name}": [
-                "type:drupal-theme"
-            ],
-            "docroot/themes/custom/{$name}": [
-                "type:drupal-custom-theme"
-            ],
-            "docroot/libraries/{$name}": [
-                "type:drupal-library"
-            ],
-            "drush/contrib/{$name}": [
-                "type:drupal-drush"
-            ]
+            "docroot/core": ["type:drupal-core"],
+            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
+            "docroot/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "docroot/profiles/custom/{$name}": ["type:drupal-custom-profile"],
+            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "docroot/themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "docroot/libraries/{$name}": ["type:drupal-library"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
         }
-    }
+    },
+    "config": {
+        "secure-http": false
+    },
+    "conflict": {
+        "drupal/core": "7.*"
+    },
+    "suggest": {
+        "hirak/prestissimo": "^0.3"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
