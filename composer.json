@@ -8,7 +8,7 @@
         "composer/installers": "^1.2.0",
         "cweagans/composer-patches": "^1.6.0",
         "wikimedia/composer-merge-plugin": "^1.4.0",
-        "acquia/blt": "^8.7.0-beta1",
+        "acquia/blt": "8.6.15",
         "govcms/govcms": "8.3.x-dev"
     },
     "require-dev": {},
@@ -18,21 +18,6 @@
         },
         "branch-alias": {
             "dev-master": "8.3.x-dev"
-        },
-        "composer-exit-on-patch-failure": true,
-        "merge-plugin": {
-            "require": [
-                "vendor/acquia/blt/composer.required.json",
-                "vendor/govcms/config/composer.required.json",
-                "vendor/govcms/config/composer.suggested.json"
-            ],
-            "include": [],
-            "recurse": true,
-            "merge-dev": true,
-            "merge-extra": true,
-            "merge-extra-deep": true,
-            "merge-scripts": true,
-            "replace": true
         },
         "enable-patching": true,
         "installer-paths": {
@@ -45,6 +30,14 @@
             "docroot/themes/custom/{$name}": ["type:drupal-custom-theme"],
             "docroot/libraries/{$name}": ["type:drupal-library"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "merge-plugin": {
+            "require": [
+                "vendor/govcms/config/composer.required.json"
+            ],
+            "merge-extra": true,
+            "merge-extra-deep": true,
+            "merge-scripts": true
         }
     },
     "config": {
