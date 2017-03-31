@@ -8,8 +8,8 @@
         "composer/installers": "^1.2.0",
         "cweagans/composer-patches": "^1.6.0",
         "wikimedia/composer-merge-plugin": "^1.4.0",
-        "acquia/blt": "8.6.15",
-        "govcms/govcms": "8.3.x-dev"
+        "govcms/govcms": "8.x-dev",
+        "govcms/config": "8.x-dev"
     },
     "require-dev": {},
     "extra": {
@@ -17,7 +17,7 @@
             "update": true
         },
         "branch-alias": {
-            "dev-master": "8.3.x-dev"
+            "dev-master": "8.x-dev"
         },
         "enable-patching": true,
         "installer-paths": {
