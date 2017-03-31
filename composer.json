@@ -8,14 +8,17 @@
         "composer/installers": "^1.2.0",
         "cweagans/composer-patches": "^1.6.0",
         "wikimedia/composer-merge-plugin": "^1.4.0",
-        "govcms/govcms": "8.x-dev",
-        "govcms/config": "8.x-dev"
+        "govcms/config": "8.x-dev",
+        "govcms/govcms": "8.x-dev"
     },
     "require-dev": {},
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
     "extra": {
-        "blt": {
-            "update": true
-        },
         "branch-alias": {
             "dev-master": "8.x-dev"
         },
