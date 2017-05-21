@@ -1,12 +1,38 @@
-# Ignore binaries.
-/bin
+# Ignore drupal core.
+docroot/
 
-# Ignore non-custom parts of Drupal.
-/docroot/core
-/docroot/modules/contrib
-/docroot/profiles/contrib
-/docroot/themes/contrib
-/docroot/sites/default/files
+# Ignore build artifacts
+/deploy
+bin/*
+tmp
+reports
 
-# Ignore Composer-managed dependencies.
+# Composer vendor
 vendor/
+vendor/.git
+
+# Sass
+.sass-cache
+
+# Node
+node_modules/
+
+# Drupal console
+console/
+console/cache/
+
+# DrupalVM
+.vagrant/
+
+# PHPStorm
+.idea/
+atlassian-ide-plugin.xml
+
+# Netbeans IDE
+nbproject
+nbproject/*
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride

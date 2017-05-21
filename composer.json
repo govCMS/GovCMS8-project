@@ -3,16 +3,46 @@
     "description": "A Composer-based installer for the govCMS Drupal Distribution",
     "keywords": ["govCMS"],
     "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "license": "GPL-2.0+",
-    "repositories": {
-        "drupal": {
+    "authors": [
+        {
+            "name": "Joseph Zhao",
+            "email": "joseph.zhao@xing.net.au"
+        },
+        {
+            "name": "Jason Guo",
+            "email": "jason.guo@xing.net.au"
+        },
+        {
+            "name": "Tim Hurley",
+            "email": "tim.hurley@finance.gov.au"
+        },
+        {
+            "name": "ruwanl",
+            "email": "ruwan.lk@gmail.com"
+        }
+    ],
+    "homepage": "https://www.govcms.gov.au",
+    "support": {
+        "issues:": "https://github.com/govCMS/govcms-project/issues",
+        "wik": "https://github.com/govCMS/govcms-project/wiki",
+        "source": "https://github.com/govCMS/govcms-project/releases"
+    },
+    "repositories": [
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
-    },
+    ],
     "require": {
         "govcms/config": "8.x-dev",
-        "govcms/govcms": "dev-8.x-1.x"
+        "govcms/govcms": "8.4.x-dev"
     },
     "require-dev": {},
     "extra": {
@@ -20,6 +50,10 @@
             "dev-master": "8.x-dev"
         },
         "enable-patching": true,
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
         "installer-paths": {
             "docroot/core": ["type:drupal-core"],
             "docroot/modules/contrib/{$name}": ["type:drupal-module"],
@@ -28,12 +62,12 @@
             "docroot/profiles/custom/{$name}": ["type:drupal-custom-profile"],
             "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
             "docroot/themes/custom/{$name}": ["type:drupal-custom-theme"],
-            "docroot/libraries/{$name}": ["type:drupal-library"],
+            "docroot/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "merge-plugin": {
             "require": [
-                "vendor/govcms/config/composer.required.json"
+                "vendor/govcms/config/composer.config.json"
             ],
             "merge-extra": true,
             "merge-extra-deep": true,
@@ -48,7 +82,5 @@
     },
     "suggest": {
         "hirak/prestissimo": "^0.3"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }

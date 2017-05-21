@@ -32,10 +32,10 @@ composer global require "hirak/prestissimo:^0.3"
 composer create-project --no-interaction govcms/govcms-project MY_PROJECT
 ```
 
-Composer will create a new directory called MY_PROJECT containing a docroot directory with a full govCMS code base therein. 
+Composer will create a new directory called MY_PROJECT containing a docroot directory with a full govCMS code base therein.
 
 And you can update govCMS Distribution via
 ```
 cd MY_PROJECT
-composer update
+composer install
 ```
