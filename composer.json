@@ -1,20 +1,20 @@
 {
     "name": "govcms/govcms-project",
-    "description": "Built for the new digital government",
+    "description": "A Composer-based installer for the govCMS Drupal Distribution",
     "keywords": ["govCMS"],
     "type": "project",
     "license": "GPL-2.0+",
-    "require": {
-        "govcms/config": "8.x-dev",
-        "govcms/govcms": "8.x-dev"
-    },
-    "require-dev": {},
     "repositories": {
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     },
+    "require": {
+        "govcms/config": "8.x-dev",
+        "govcms/govcms": "dev-8.x-1.x"
+    },
+    "require-dev": {},
     "extra": {
         "branch-alias": {
             "dev-master": "8.x-dev"
@@ -41,7 +41,7 @@
         }
     },
     "config": {
-        "secure-http": false
+        "bin-dir": "bin/"
     },
     "conflict": {
         "drupal/core": "7.*"
