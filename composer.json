@@ -41,6 +41,7 @@
         }
     ],
     "require": {
+        "wikimedia/composer-merge-plugin": "^1.4",
         "govcms/config": "8.x-dev",
         "govcms/govcms": "8.4.x-dev"
     },
@@ -50,10 +51,7 @@
             "dev-master": "8.x-dev"
         },
         "enable-patching": true,
-        "installer-types": [
-            "bower-asset",
-            "npm-asset"
-        ],
+        "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
             "docroot/core": ["type:drupal-core"],
             "docroot/modules/contrib/{$name}": ["type:drupal-module"],
