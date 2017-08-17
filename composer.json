@@ -69,7 +69,9 @@
             ],
             "merge-extra": true,
             "merge-extra-deep": true,
-            "merge-scripts": true
+            "merge-scripts": true,
+            "replace": false,
+            "ignore-duplicates": true
         }
     },
     "config": {
