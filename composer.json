@@ -1,7 +1,7 @@
 {
-    "name": "govcms/govcms-project",
+    "name": "govcms/govcms8",
     "description": "A Composer-based installer for the govCMS Drupal Distribution",
-    "keywords": ["govCMS"],
+    "keywords": ["govCMS", "govCMS8"],
     "type": "project",
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -26,9 +26,9 @@
     ],
     "homepage": "https://www.govcms.gov.au",
     "support": {
-        "issues:": "https://github.com/govCMS/govcms-project/issues",
-        "wik": "https://github.com/govCMS/govcms-project/wiki",
-        "source": "https://github.com/govCMS/govcms-project/releases"
+        "issues:": "https://github.com/govCMS/govCMS8/issues",
+        "wik": "https://github.com/govCMS/govCMS8/wiki",
+        "source": "https://github.com/govCMS/govCMS8/releases"
     },
     "repositories": [
         {
@@ -42,13 +42,13 @@
     ],
     "require": {
         "wikimedia/composer-merge-plugin": "^1.4",
-        "govcms/config": "8.x-dev",
-        "govcms/govcms": "8.4.x-dev"
+        "govcms/govcms8-config": "1.x-dev",
+        "govcms/govcms8-core": "8.4.x-dev"
     },
     "require-dev": {},
     "extra": {
         "branch-alias": {
-            "dev-master": "8.x-dev"
+            "dev-master": "1.x-dev"
         },
         "enable-patching": true,
         "installer-types": ["bower-asset", "npm-asset"],
@@ -65,7 +65,7 @@
         },
         "merge-plugin": {
             "require": [
-                "vendor/govcms/config/composer.config.json"
+                "vendor/govcms/govcms8-config/composer.config.json"
             ],
             "merge-extra": true,
             "merge-extra-deep": true,
