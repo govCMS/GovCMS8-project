@@ -43,7 +43,7 @@
     "require": {
         "wikimedia/composer-merge-plugin": "^1.4",
         "govcms/govcms8-config": "1.x-dev",
-        "govcms/govcms8-core": "8.4.x-dev"
+        "govcms/govcms": "8.4.x-dev"
     },
     "require-dev": {},
     "extra": {
