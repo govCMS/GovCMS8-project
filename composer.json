@@ -1,6 +1,6 @@
 {
     "name": "govcms/govcms8",
-    "description": "A Composer-based installer for the govCMS Drupal Distribution",
+    "description": "Project template for the govCMS8 Drupal Distribution",
     "keywords": ["govCMS", "govCMS8"],
     "type": "project",
     "minimum-stability": "dev",
