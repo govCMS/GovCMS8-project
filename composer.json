@@ -30,57 +30,8 @@
         "wik": "https://github.com/govCMS/govCMS8/wiki",
         "source": "https://github.com/govCMS/govCMS8/releases"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ],
     "require": {
-        "wikimedia/composer-merge-plugin": "^1.4",
-        "govcms/govcms8-config": "1.x-dev",
-        "govcms/govcms": "8.4.x-dev"
+        "govcms/govcms8-config": "1.x-dev"
     },
-    "require-dev": {},
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.x-dev"
-        },
-        "enable-patching": true,
-        "installer-types": ["bower-asset", "npm-asset"],
-        "installer-paths": {
-            "docroot/core": ["type:drupal-core"],
-            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
-            "docroot/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "docroot/profiles/custom/{$name}": ["type:drupal-custom-profile"],
-            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
-            "docroot/themes/custom/{$name}": ["type:drupal-custom-theme"],
-            "docroot/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
-        },
-        "merge-plugin": {
-            "require": [
-                "vendor/govcms/govcms8-config/composer.config.json"
-            ],
-            "merge-extra": true,
-            "merge-extra-deep": true,
-            "merge-scripts": true,
-            "replace": false,
-            "ignore-duplicates": true
-        }
-    },
-    "config": {
-        "bin-dir": "bin/"
-    },
-    "conflict": {
-        "drupal/core": "7.*"
-    },
-    "suggest": {
-        "hirak/prestissimo": "^0.3"
-    }
+    "require-dev": {}
 }
