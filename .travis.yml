@@ -1,0 +1,45 @@
+dist:             trusty
+sudo:             false
+language:         php
+
+branches:
+  except:
+     - master
+
+cache:
+  bundler:        true
+  apt:            true
+  directories:
+    - "$HOME/.composer/cache"
+    - "$HOME/.drush/cache"
+    - "$HOME/.npm"
+
+php:
+  - '5.6'
+  - '7.0'
+  - '7.1'
+
+matrix:
+  allow_failures:
+  - php:          5.6
+
+before_install:
+  # Tweak PHP configuration.
+  - echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+  - echo 'max_execution_time = 180' >> govcms.php.ini;
+  - echo 'sendmail_path = /bin/true' >> govcms.php.ini;
+  - phpenv config-add govcms.php.ini
+  - phpenv config-rm xdebug.ini
+  - phpenv rehash
+
+  # Composer
+  - composer self-update
+  - composer --version
+
+install:
+  # Add Composer's local bin directory to the PATH.
+  - export PATH="$HOME/.composer/vendor/bin:$TRAVIS_BUILD_DIR/bin:$PATH"
+
+script:
+  - cd $TRAVIS_BUILD_DIR
+  - travis_retry composer --verbose --stability dev --prefer-dist create-project govcms/govcms8 govcms8
