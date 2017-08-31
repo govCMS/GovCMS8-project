@@ -19,6 +19,11 @@ php:
   - '7.0'
   - '7.1'
 
+mysql:
+  database:       govcms8
+  username:       govcms
+  encoding:       utf8
+
 matrix:
   allow_failures:
   - php:          5.6
@@ -32,6 +37,10 @@ before_install:
   - phpenv config-rm xdebug.ini
   - phpenv rehash
 
+  # MySQL Options
+  - mysql -e 'SET GLOBAL wait_timeout = 5400;'
+  - mysql -e "SHOW VARIABLES LIKE 'wait_timeout'"
+
   # Composer
   - composer self-update
   - composer --version
@@ -42,4 +51,4 @@ install:
 
 script:
   - cd $TRAVIS_BUILD_DIR
-  - travis_retry composer --verbose --stability dev --prefer-dist create-project govcms/govcms8 govcms8
+  - travis_retry composer create-project --stability dev --prefer-dist govcms/govcms8 govcms8
