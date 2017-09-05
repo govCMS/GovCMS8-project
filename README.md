@@ -14,7 +14,6 @@
 
 * [Git](http://git-scm.com/)
 * [Composer](https://getcomposer.org/)
-* [Node](https://nodejs.org/en/), which includes the NPM package manager
 
 ### Installing govCMS
 
@@ -37,5 +36,5 @@ Composer will create a new directory called MY_PROJECT containing a docroot dire
 And you can update govCMS Distribution via
 ```
 cd MY_PROJECT
-composer install
+composer update
 ```
