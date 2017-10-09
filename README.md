@@ -33,7 +33,7 @@ composer create-project --stability dev --no-interaction govcms/govcms8 MY_PROJE
 
 Composer will create a new directory called MY_PROJECT containing a docroot directory with a full govCMS code base therein.
 
-And you can update govCMS Distribution via
+And you can update govCMS Distribution via (noting that at this stage, updating this way may break some of the dependencies within the distribution, and is generally not recommended unless you know what you're doing!)
 ```
 cd MY_PROJECT
 composer update
