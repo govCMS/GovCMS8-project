@@ -33,12 +33,11 @@ composer create-project --stability dev --no-interaction govcms/govcms8 MY_PROJE
 
 Composer will create a new directory called MY_PROJECT containing a docroot directory with a full govCMS code base therein.
 
-> * A higher memory limit, for example 2048MB, may be required for PHP command line interface (CLI) to create the project successfully: ```php -i | grep "memory_limit"```
-> * Please be sure the web server and composer use the same PHP version to avoid issues when installing the website:  
-> ```php -v```
-
 And you can update govCMS Distribution via (noting that at this stage, updating this way may break some of the dependencies within the distribution, and is generally not recommended unless you know what you're doing!)
 ```
 cd MY_PROJECT
 composer update
 ```
+### Troubleshooting
+
+If you're encountering some oddities, [here's a list of resolutions](https://github.com/govCMS/govCMS8-core/wiki/Troubleshooting) to some of the problems you may be experiencing.
