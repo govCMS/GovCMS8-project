@@ -26,12 +26,10 @@
     ],
     "homepage": "https://www.govcms.gov.au",
     "support": {
-        "issues:": "https://github.com/govCMS/govCMS8/issues",
-        "wik": "https://github.com/govCMS/govCMS8/wiki",
-        "source": "https://github.com/govCMS/govCMS8/releases"
+        "issues:": "https://github.com/govCMS/govCMS8-Project/issues",
+        "wik": "https://github.com/govCMS/govCMS8-Project/wiki",
+        "source": "https://github.com/govCMS/govCMS8-Project/releases"
     },
-    "require": {
-        "govcms/govcms8-config": "1.x-dev"
-    },
+    "require": {},
     "require-dev": {}
 }
