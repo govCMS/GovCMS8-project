@@ -1,5 +1,5 @@
 {
-    "name": "govcms/govcms8",
+    "name": "govcms/govcms8-project",
     "description": "Project template for the govCMS8 Drupal Distribution",
     "keywords": ["govCMS", "govCMS8"],
     "type": "project",
