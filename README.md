@@ -1,5 +1,7 @@
 # govCMS (Drupal 8) distribution composer-based installer
 
+[![Build Status](https://travis-ci.org/govCMS/govCMS8-Project.svg?branch=1.x)](https://travis-ci.org/govCMS/govCMS8-Project)
+
 ## Installation
 
 ### Server Requirements
