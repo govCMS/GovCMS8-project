@@ -31,7 +31,7 @@
         "source": "https://github.com/govCMS/govCMS8-Project/releases"
     },
     "require": {
-        "govcms/govcms8-config": "1.x-dev"
+        "govcms/govcms8-installer": "1.x-dev"
     },
     "require-dev": {}
 }
