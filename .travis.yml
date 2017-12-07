@@ -26,6 +26,7 @@ mysql:
 matrix:
   allow_failures:
   - php:          7.2
+  fast_finish:    true
 
 before_install:
   # Tweak PHP configuration.
