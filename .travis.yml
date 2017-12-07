@@ -16,11 +16,16 @@ cache:
 
 php:
   - '7.1'
+  - '7.2'
 
 mysql:
   database:       govcms8
   username:       govcms
   encoding:       utf8
+
+matrix:
+  allow_failures:
+  - php:          7.2
 
 before_install:
   # Tweak PHP configuration.
@@ -45,4 +50,4 @@ install:
 
 script:
   - cd $TRAVIS_BUILD_DIR
-  - travis_retry composer create-project --stability dev --prefer-dist govcms/govcms8-project govCMS8
+  - travis_retry composer install
