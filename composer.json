@@ -41,7 +41,22 @@
     "require": {
         "govcms/govcms": "8.4.*"
     },
+    "extra": {
+        "installer-types": ["bower-asset", "npm-asset"],
+        "installer-paths": {
+            "docroot/core": ["type:drupal-core"],
+            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
+            "docroot/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "docroot/profiles/{$name}": ["type:drupal-profile"],
+            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "docroot/themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "docroot/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "enable-patching": true
+    },
     "config": {
+        "bin-dir": "bin/",
         "sort-packages": true,
         "optimize-autoloader": true
     },
