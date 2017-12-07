@@ -1,7 +1,7 @@
 # govCMS8 Composer Project Installer
 <img src="https://www.drupal.org/files/styles/grid-3/public/project-images/govcms8.png" alt="govCMS8 logo" align="right"/>
 
-[![Build Status](https://travis-ci.org/govCMS/govCMS8-core.svg?branch=8.4.x)](https://travis-ci.org/govCMS/govCMS8-core)
+[![Build Status](https://travis-ci.org/govCMS/govCMS8-project.svg?branch=1.x)](https://travis-ci.org/govCMS/govCMS8-project)
 
 govCMS8 is the Drupal 8-specific version of the govCMS distribution.
 
