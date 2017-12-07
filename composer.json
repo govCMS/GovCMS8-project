@@ -3,8 +3,6 @@
     "description": "Project template for the govCMS8 Drupal Distribution",
     "keywords": ["govCMS", "govCMS8"],
     "type": "project",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "license": "GPL-2.0+",
     "authors": [
         {
@@ -30,7 +28,23 @@
         "wik": "https://github.com/govCMS/govCMS8/wiki",
         "source": "https://github.com/govCMS/govCMS8/releases"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "require": {
-        "govcms/govcms8-installer": "1.x-dev"
-    }
+        "govcms/govcms": "8.4.*"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
