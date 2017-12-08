@@ -39,7 +39,7 @@
         }
     ],
     "require": {
-        "govcms/govcms": "8.4.*"
+        "govcms/govcms": "~1.0"
     },
     "extra": {
         "installer-types": ["bower-asset", "npm-asset"],
