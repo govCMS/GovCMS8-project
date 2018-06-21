@@ -21,6 +21,7 @@
         }
     ],
     "require": {
+        "drupal-composer/drupal-scaffold": "^2.5",
         "govcms/govcms": "~1.0"
     },
     "require-dev": {
