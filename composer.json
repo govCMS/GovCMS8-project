@@ -21,6 +21,7 @@
         }
     ],
     "require": {
+        "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.5",
         "govcms/govcms": "~1.0"
     },
