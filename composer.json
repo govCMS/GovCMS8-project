@@ -23,6 +23,9 @@
     "require": {
         "govcms/govcms": "~1.0"
     },
+    "require-dev": {
+        "drush/drush": "^9.0"
+    },
     "extra": {
         "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
