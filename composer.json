@@ -4,24 +4,6 @@
     "keywords": ["govCMS", "govCMS8"],
     "type": "project",
     "license": "GPL-2.0-or-later",
-    "authors": [
-        {
-            "name": "Joseph Zhao",
-            "email": "joseph.zhao@xing.net.au"
-        },
-        {
-            "name": "Jason Guo",
-            "email": "jason.guo@xing.net.au"
-        },
-        {
-            "name": "Tim Hurley",
-            "email": "tim@timhurley.net"
-        },
-        {
-            "name": "ruwanl",
-            "email": "ruwan.lk@gmail.com"
-        }
-    ],
     "homepage": "https://www.govcms.gov.au",
     "support": {
         "issues:": "https://github.com/govCMS/govCMS8/issues",
