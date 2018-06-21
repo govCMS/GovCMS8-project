@@ -46,6 +46,8 @@
         "optimize-autoloader": true
     },
     "scripts": {
+        "post-install-cmd": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "post-update-cmd": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "nuke": "rm -r -f bin docroot vendor composer.lock"
     },
     "minimum-stability": "dev",
