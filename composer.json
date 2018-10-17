@@ -52,6 +52,9 @@
         "post-update-cmd": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "nuke": "rm -r -f bin docroot vendor composer.lock"
     },
+    "suggest": {
+        "hirak/prestissimo": "^0.3"
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
