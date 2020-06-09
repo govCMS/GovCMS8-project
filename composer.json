@@ -21,10 +21,11 @@
         }
     ],
     "require": {
-        "php": "^7.1",
+        "php": "^7.3",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.5",
-        "govcms/govcms": "~1.0"
+        "govcms/govcms": "~1",
+        "symfony/event-dispatcher": "4.3.11 as 3.4.35"
     },
     "require-dev": {
         "drush/drush": "^9.0"
