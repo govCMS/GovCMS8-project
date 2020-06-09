@@ -13,6 +13,11 @@ This repository is for inclusion as part of a composer create-project installati
 
 Complete installation instructions are available at the main GovCMS8 repository https://github.com/GovCMS/GovCMS8
 
+### Troubleshooting
+
+If you're unable to get started, please try the following before getting composer update working:
+* ``composer require symfony/event-dispatcher:"4.3.11 as 3.4.35"`
+
 ### Quick Start
 
 Composer will create a new directory called MY_PROJECT containing a docroot directory with a full GovCMS code base therein.
