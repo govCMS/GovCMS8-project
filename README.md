@@ -16,7 +16,7 @@ Complete installation instructions are available at the main GovCMS8 repository 
 ### Troubleshooting
 
 If you're unable to get started, please try the following before getting `composer update` to work:
-* `composer require symfony/event-dispatcher:"4.3.11 as 3.4.35"`
+* `composer require symfony/event-dispatcher:"4.3.11 as 3.4.41"`
 
 ### Quick Start
 
